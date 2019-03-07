@@ -1,0 +1,182 @@
+head,body {
+    background: #ffe1dc;
+}
+
+body::-webkit-scrollbar {
+    display:none;
+}
+
+header {
+    background: #c9453e;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 278px;
+    width: 100%;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+header > h2 {
+    text-align: center;
+    margin: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main > .ui.segment {
+    border: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 108px !important;
+    max-width: 640px;
+    box-shadow: 0 1px 4px 1px rgba(34, 36, 38, 0.25);
+
+}
+
+.ui.segment > .secondary-header {
+    padding: 32px;
+    width: 100%;
+    color: white;
+    background: #ff6f61;
+    box-shadow: 0px 6px 4px 0px rgba(34,36,38,.15);
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.ui.segment > .secondary-header > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+form {
+    overflow: hidden;
+    padding: 24px 32px;
+}
+
+form > .sections {
+    display: flex;
+}
+
+form > .sections > .form-section {
+    width: 100%;
+    opacity: 0;
+    display: none;
+}
+
+form > .sections > .form-section.active {
+    display: block;
+}
+
+form > .sections > .form-section > .title-logo {
+    padding: 16px 24px 24px 24px;
+    display: flex;
+    justify-content: center;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+form > .sections > .form-section > p {
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+form > .form-controller {
+    margin-top: 32px;
+}
+
+form > .form-controller > .ui.button {
+    min-width: 96px;
+    margin-right: 8px; 
+}
+
+form > .form-controller > .ui.button.hide {
+    display: none;
+}
+
+form > .form-controller > .spacer {
+    display: none;
+}
+
+form > .form-controller > .spacer.active {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 16px 16px 16px 48px;
+    width: 100%;
+}
+
+.content-result {
+    display: none;
+}
+
+.wrapper-result {
+    padding: 54px 32px 172px 45px;
+}
+
+.wrapper-result > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.44em;
+}
+
+.ui.modal {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.hidden-form-data {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    main > .ui.segment {
+        margin-top: 32px !important;
+    }
+
+    form > .form-controller {
+        display: flex;
+        justify-content: center;
+    }
+
+    form > .form-controller > .ui.button {
+        width: 100%;
+        margin-right: 0; 
+    }
+
+    form > .form-controller > .spacer {
+        display: block;
+    }
+
+    form > .form-controller > .spacer.active {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
